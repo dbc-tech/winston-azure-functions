@@ -1,6 +1,6 @@
 import { Context } from '@azure/functions';
 import { createLogger, format } from 'winston';
-import AzureContextLogger from './azure-function-app-transport';
+import { AzureContextLogger } from './azure-function-app-transport';
 
 const getMockContext = (): Partial<Context> => ({
   log: Object.assign(jest.fn(), {

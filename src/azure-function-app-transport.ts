@@ -5,7 +5,7 @@ interface Options extends TransportStreamOptions {
   context?: Context;
 }
 
-class AzureContextLogger extends Transport {
+export class AzureContextLogger extends Transport {
   readonly context: Context;
 
   constructor(options?: Options) {
@@ -29,5 +29,3 @@ class AzureContextLogger extends Transport {
     callback?.();
   }
 }
-
-export default AzureContextLogger;
